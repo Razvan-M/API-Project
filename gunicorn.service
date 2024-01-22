@@ -7,6 +7,7 @@ User=razvan
 Group=razvan
 WorkingDirectory=~/app/src/
 Environment="PATH=~/.cache/pypoetry/virtualenvs/learning-fastapi-YOrm-uMw-py3.10/bin"
+EnvironmentFile=/home/razvan/.env
 ExecStart=~/.cache/pypoetry/virtualenvs/learning-fastapi-YOrm-uMw-py3.10/bin/gunicorn -w 4 -k uvicorn.workers.UvicornWorker app.main:app --bind 0.0.0.0:8000
 
 [Install]
