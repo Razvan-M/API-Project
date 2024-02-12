@@ -18,3 +18,5 @@ jobs:
         run: pip install poetry==1.6.1
       - name: installing dependencies
         run: poetry install
+      - name: test with pytest
+        run: poetry run pytest
