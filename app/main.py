@@ -21,7 +21,7 @@ app.add_middleware(
 )
 
 
-#models.Base.metadata.create_all(bind=engine)
+models.Base.metadata.create_all(bind=engine)
 
 
 app.include_router(post.router)
@@ -31,4 +31,4 @@ app.include_router(vote.router)
 
 @app.get("/")
 def root():
-    return {"message" : "Marian!"}
+    return {"message" : "Welcome to my api!"}

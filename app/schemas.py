@@ -42,6 +42,7 @@ class PostOut(BaseModel):
 class UserCreate(BaseModel):
     email: EmailStr
     password: str
+    phone_number: int
 
 
 class UserLogin(BaseModel):
